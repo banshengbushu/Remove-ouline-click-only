@@ -13,12 +13,13 @@ img {
 }
 
 .js-focus-visible .focusable-ele:focus:not(.focus-visible) {
+    outline: red solid 1px;
+}
+
+.js-focus-visible .focusable-ele:focus.focus-visible {
     outline: none;
 }
 
-
-/* firefox do not work*/
 /*[data-whatintent='mouse'] *:focus {*/
     /*outline: none;*/
-    /*!*border-color: red;*!*/
 /*}*/
