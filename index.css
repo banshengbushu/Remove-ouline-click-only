@@ -12,6 +12,13 @@
     width: 500px;
 }
 
-.js-focus-visible .focusable-ele:focus:not(.focus-visible) {
+/*.js-focus-visible .focusable-ele:focus:not(.focus-visible) {*/
+    /*outline: none;*/
+/*}*/
+
+
+/* firefox do not work*/
+[data-whatintent='mouse'] *:focus {
     outline: none;
+    /*border-color: red;*/
 }
