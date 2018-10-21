@@ -12,6 +12,6 @@
     width: 500px;
 }
 
-/*:focus {*/
-    /*outline: none;*/
-/*}*/
+.js-focus-visible .focusable-ele:focus:not(.focus-visible) {
+    outline: none;
+}
