@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.focusable-ele {
+    height: 60px;
+    margin: 20px 0;
+}
+
+.img {
+    width: 500px;
+}
