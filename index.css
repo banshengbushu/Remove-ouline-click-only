@@ -18,7 +18,7 @@
 
 
 /* firefox do not work*/
-[data-whatintent='mouse'] *:focus {
-    outline: none;
-    /*border-color: red;*/
-}
+/*[data-whatintent='mouse'] *:focus {*/
+    /*outline: none;*/
+    /*!*border-color: red;*!*/
+/*}*/
