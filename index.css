@@ -12,17 +12,41 @@ img {
     width: 500px;
 }
 
-.js-focus-visible .focusable-ele:focus:not(.focus-visible) {
-    outline: none;
-}
-
-.js-focus-visible .focusable-ele:focus.focus-visible {
-    outline: red solid 2px;
-}
-
-
-/* firefox do not work*/
-/*[data-whatintent='mouse'] *:focus {*/
-    /*outline: none;*/
-    /*!*border-color: red;*!*/
+/*.js-focus-visible .focusable-ele:focus:not(.focus-visible) {*/
+/*outline: none;*/
 /*}*/
+
+/*.js-focus-visible .focusable-ele:focus.focus-visible {*/
+/*outline: red solid 2px;*/
+/*}*/
+
+[data-whatintent='mouse'] *:active {
+    outline: none;
+    box-shadow: none !important;
+}
+
+[data-whatintent='mouse'] *:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+[data-whatintent='mouse'] *::-moz-focus-inner {
+    outline: none;
+    box-shadow: none !important;
+}
+
+/* divs or sections with tabindex */
+   html:not([data-whatinput='keyboard']) div:focus {
+       outline: none;
+   }
+
+
+[data-whatintent='mouse'] *:-moz-focusring {
+    outline: none;
+    box-shadow: none !important;
+}
+
+/* divs or sections with tabindex */
+   html:not([data-whatinput='keyboard']) div::-moz-focus-inner {
+       outline: none;
+   }
