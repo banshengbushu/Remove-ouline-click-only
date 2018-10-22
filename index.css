@@ -20,38 +20,19 @@ img {
 /*outline: red solid 2px;*/
 /*}*/
 
-[data-whatintent='mouse'] *:active {
-    outline: none;
-    box-shadow: none !important;
-}
 
-[data-whatintent='mouse'] *::-moz-focus-inner {
-    outline: none;
-    box-shadow: none !important;
+/* remove firefox dotted outline*/
+::-moz-focus-inner {
+    border: none;
 }
 
 [data-whatintent='mouse'] *:focus {
     outline: none;
-    box-shadow: none !important;
-}
-
-[data-whatintent='mouse'] *::-moz-focus-inner {
-    outline: none;
-    box-shadow: none !important;
+    border: 1px solid #ccc;
 }
 
 /* divs or sections with tabindex */
    html:not([data-whatinput='keyboard']) div:focus {
        outline: none;
-   }
-
-
-[data-whatintent='mouse'] *:-moz-focusring {
-    outline: none;
-    box-shadow: none !important;
-}
-
-/* divs or sections with tabindex */
-   html:not([data-whatinput='keyboard']) div::-moz-focus-inner {
-       outline: none;
+       border: 1px solid #ccc;
    }
