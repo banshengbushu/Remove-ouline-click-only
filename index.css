@@ -25,6 +25,11 @@ img {
     box-shadow: none !important;
 }
 
+[data-whatintent='mouse'] *::-moz-focus-inner {
+    outline: none;
+    box-shadow: none !important;
+}
+
 [data-whatintent='mouse'] *:focus {
     outline: none;
     box-shadow: none !important;
